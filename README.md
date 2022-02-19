@@ -8,15 +8,9 @@
 *   [Data Pre-processing](#DataPre-processing)
 *   [Data Warehousing](#DataWarehousing)
 *   [Exploratory data analysis](#EDA)
-<!-- *   [Data Visualisation & Analytics](#Dataviz)
-*   [Business Intelligence](#Busintelli) -->
 *   [Feature Engineering](#FeatEng)
 *   [ML/DL Model Building](#ModelBuild)
-<!-- *   [Model performance](#ModelPerf)
-*   [Model Optimisation](#ModelOpt) -->
 *   [Model Evaluation](#ModelEval)
-<!-- *   [Model Productionisation](#ModelProd)
-*   [Deployment](#ModelDeploy) -->
 *   [Project Management (Agile | Scrum)](#Prjmanage)
 *   [Project Evaluation](#PrjEval)
 *   [Looking Ahead](#Lookahead)
@@ -80,23 +74,6 @@ I looked at the distributions of the data and the value counts for the various c
 *   I looked at the correlation the features have
 <img src="images/correlation.png" />
 
-<!-- <a name="Dataviz"></a>  
-
-## [Data Visualisation & Analytics](https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection)
-[View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection)
-*   I created an interactive dashboard to deploy the machine learning model to benefit the business.
-*   I visualised various key features and highlighted their overall correlation to a customer’s churn. 
-
-<a name="Busintelli"></a>  
-
-## Business Intelligence
-On Page 2 of the interactive dashboard, I have provided the stake holders with the new customer names and the customers that are likely to churn due to their characteristics.
-
-*   These customers can be offered subsidised deals and incentives to keep them on
-*   Greater engagement with customers could keep some customers on board 
-*   Providing quality customer service can also provide customers with long term value and appreciation for the business
-*   The complaints team should pay particular attention to complaints from customers who are predicted to churn.
-- 96% of unhappy customers don’t complain and 91% of those will simply leave and never come back? -->
 
 <a name="FeatEng"></a>  
 
@@ -114,31 +91,7 @@ I used label encoder to encode the categorical variable(s) into numeric values f
 ## [ML/DL Model Building](Code/P11_Code.ipynb)
 
 I applied the XGBRegressor model to achieve the predictions. 
-<!-- I tried eight different models:
-*   **KN Neighbors Classifier** 
-*   **Linear SVC** 
-*   **Decision Tree Classifier** 
-*   **Random Forest Classifier**
-*   **XGB Regressor** 
-*   **AdaBoost Classifier**  
-*   **Gaussian NB** 
-*   **Quadratic Discriminant Analysis** 
 
-<img src="images/Crossvalidation.png" /> -->
-
-<!-- <a name="ModelPerf"></a> 
-
-## [Model performance](Code/P11_Code.ipynb)
-The Quadratic Discriminant Analysis model outperformed the other approaches on the test and validation sets. 
-*   **Quadratic Discriminant Analysis** : Accuracy = 96% 
-
-<a name="ModelOpt"></a> 
-
-## [Model Optimisation](Code/P11_Code.ipynb)
-In this step, I used GridsearchCV to find the best parameters to optimise the performance of the model.
-Using the best parameters, I improved the model accuracy by **1%**
-
-*   **Quadratic Discriminant Analysis** : Accuracy = 97% | MSE = 0.03 | RMSE = 0.17 (2dp) -->
 
 <a name="ModelEval"></a> 
 
@@ -150,18 +103,7 @@ A value of 0.5 means that half of the variance in the outcome variable is explai
 *   Plotting the actual and predicted values for botht the training and test sets shows how accracy and linear correlation decreases in the test data. 
 <img src="images/trainevaluation.png" />
 <img src="images/testevaluation.png" />
-<!-- <img src="images/Confusionmatrix.png" /> -->
 
-<!-- <a name="ModelProd"></a> 
-
-## [Model Productionisation](Code/P11_Code.ipynb)
-*   A confusion matrix showing the accuracy score of 97.25% achieved by the model. 
-<img src="images/Confusionmatrix.png" />
-
-<a name="ModelDeploy"></a> 
-
-## [Deployment](https://app.powerbi.com/view?r=eyJrIjoiNDExYjQ0OTUtNWI5MC00OTQ5LWFlYmUtYjNkMzE1YzE2NmE0IiwidCI6IjYyZWE3MDM0LWI2ZGUtNDllZS1iZTE1LWNhZThlOWFiYzdjNiJ9&pageName=ReportSection)
-I built a flask REST API endpoint that was hosted on a local webserver before AWS EC2 deployment. The API endpoint takes in a request value; height and weight and returns predicted BMI index. I also optimised and formatted the frontend using HTML and CSS.  -->
 
 <a name="Prjmanage"></a> 
 
