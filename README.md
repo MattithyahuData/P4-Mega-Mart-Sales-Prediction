@@ -21,7 +21,11 @@
 ## Resources Used
 **Python 3, PostgreSQL** 
 
-[**Anaconda Packages:**](requirements.txt) **pandas, numpy, pandas_profiling, ipywidgets, sklearn, xgboost, matplotlib, seaborn, sqlalchemy, kaggle** 
+[**Anaconda Packages:**](requirements.txt) **pandas numpy pandas_profiling ipywidgets sklearn xgboost matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel** 
+Powershell command for installing anaconda packages used for this project  
+```powershell
+pip install pandas numpy pandas_profiling ipywidgets sklearn xgboost matplotlib seaborn sqlalchemy kaggle psycopg2 ipykernel
+```
 
 <a name="DataCollection"></a>  
 
